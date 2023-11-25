@@ -1,0 +1,846 @@
+:root{
+    --primary-color:  #1867a0;
+    --primary-bc: #dcedf9;
+    --text-color: #4d4d4d;
+    --secondary-color: #FF9052;
+    --high-color:#9fc43a;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    box-sizing:border-box;
+    line-height: 1.6rem;
+}
+body{
+    background-color: #ecf0f5;
+    list-style-type: none;
+    position: relative;
+}
+strong{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.text-underline{
+    display: inline;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.clear{
+    clear: both;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    right:0;
+    display: flex;
+    left:0;
+    background-color: #fff;
+    height: 65px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.header__bar{
+    width: 1100px;
+}
+.header__logo{
+    transform: translateY(-40%);
+}
+.header__nav-list{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 0;
+}
+.header__nav-item{
+    display: inline-block;
+    margin: 0 24px;
+}
+.header__nav-item:nth-child(2), .header__nav-item:first-child{
+    min-width: 75px;
+}
+.header__nav-item:nth-child(4){
+    min-width: 51px;
+}
+.header__nav-link{
+    max-width: 100%;
+    line-height: 65px;
+    font-size: 1.6rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5 ease;
+}
+
+.header__nav-link--active{
+    color: var(--primary-color);
+    font-weight: 600;
+
+}
+.header__nav-item:hover .header__nav-link{
+    color: var(--primary-color);    
+    font-weight: 600;
+
+}
+.header__account{
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.header__account-avt{
+    width: 25px;
+    height: 25px;
+    display:inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+    transform: translateY(-4px);
+}
+.header__account-title{
+    display: inline-block;
+    line-height: 65px;
+    font-size: 1.6rem;
+    margin: 0;
+}
+.header__account-down{
+    margin-left: 4px;
+    font-size: 1.3rem;
+    color: #000
+}
+.header__account.active .header__account-list{
+    display: block;
+}
+.header__account.active > i{
+    transform: rotate(180deg);
+}
+.header__account-list{
+    list-style-type: none;
+    display: none;
+    width: 190px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: -10px;
+    padding: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease ;
+    overflow: hidden;
+}
+
+@keyframes fadeIn{
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 140px;
+    }
+}
+.header__account-item:hover a,
+.header__account-item:hover i{
+    transition: all 0.5s ease;
+}
+.header__account-item:hover a,
+.header__account-item:hover i {
+    color: var(--primary-color);
+}
+.header__account-item{
+    padding: 12px 12px ;
+}
+.header__account-item a,
+.header__account-icon
+{
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.header__account-icon{
+    margin-right: 4px;
+}
+
+/* Breadcum */
+.breadcum{
+    margin-top: 77px;
+    width: 1100px;
+    height: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 4px;
+}
+
+.breadcum__icon{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-right: 8px;
+}
+.breadcum__link{
+    line-height: 48px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* TOur detail */
+.tour{
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tour__title{
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    padding: 0;
+    color: var(--text-color);
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+.fb-top{
+    padding-left: 4px;
+}
+.fb-top__score{
+    background-color: var(--high-color);
+    border-radius:6px;
+    color:#ffffff;
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 3px 5px;
+    margin-right: 4px;
+}
+.fb-top__desc{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.fb-top__desc::after{
+    margin-left: 6px;
+    margin-right: 4px;
+    content: "";
+    border-right: 1px solid #8c8b8b;
+    height: 80%;
+    
+}
+.fb-top__quantity{
+    font-size: 1.3rem;
+    color: #aaa;
+}
+.tour-section{
+    padding-right: 20px;
+    padding-left: 0;
+}
+.tour-img {
+    background: url('/assets/img/ivivu-cau-rong-da-nang.gif')  center /cover no-repeat ;
+    margin-top: 16px;
+    height: 390px;
+    position: relative;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.tour-img-desc{
+    position: absolute;
+    top: 100%;
+    height: 62px;
+    background-color: #fff;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.tour-img-desc__info{
+    line-height: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.tour-img-desc__id{
+    line-height: 60px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    float: right;
+    margin-right: 16px;
+}
+.tour-img-desc__info i{
+    margin-right: 4px;
+}
+.tour-img-desc__info i:nth-child(3){
+    margin-left: 4px;
+}
+
+.tour-info{
+    background-color: #fff;
+    margin-top: 80px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+.tour-info__heading{
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 12px 0 0 0;
+}
+.tour-info__content{
+    margin: 4px 0px 4px 0;
+    padding: 8px 16px 8px 16px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.tour-info__highlight{
+    font-weight: bold;
+}
+
+
+/* Lịch trình Tour */
+.tour-accordion__box {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    /* box-shadow: 0 0 10px rgba(0,0,0,.2); */
+}
+
+.tour-accordion__header{
+	position: relative;
+    cursor: pointer;
+}
+.tour-accordion__header:hover span,
+.tour-accordion__header:hover i{
+    color: var(--primary-color);
+}
+.tour-accordion__header i{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.tour-accordion__box.active .tour-accordion__header i{
+    transform: rotate(180deg);
+}
+.tour-accordion__box.active .tour-accordion__header span,
+.tour-accordion__box.active .tour-accordion__header i{
+    color: var(--primary-color);
+}
+.tour-accordion__day{
+    max-width: 80%;
+	background-color: #fff;
+	color: var(--text-color);
+	display: block;
+	padding: 10px 12px 10px 12px;
+	text-decoration: none;
+	font-weight:600;
+    font-size: 1.6rem;
+}
+
+.tour-accordion__body{
+	padding: 0 20px 12px 20px;
+	font-size: 1.5rem;
+    line-height: 1.5;
+    /* height: 0; */
+    display: none;
+    overflow: hidden;
+    transition: all 0.5s;
+    overflow-y: auto;
+}
+
+.tour-accordion__box.active .tour-accordion__body{
+    display: block; 
+}  
+
+.tour-accordion__img{
+    padding: 8px 0;
+    text-align: center;
+}
+.tour-accordion__img img{
+    width: 100%;
+}
+.tour-accordion__img i{
+    font-size: 1.4rem;
+}
+
+.tour-info__price{
+    padding: 0 8px;
+}
+.tour-info__price-table{
+    font-size: 1.5rem;
+}
+.tour-info__price-table > tbody{
+    vertical-align: middle;
+
+}
+.tour-info__price td, th{
+    height: 50px;
+    
+}
+
+
+/* CHI PHÍ DỰ KIẾN */
+.tour-info__fee{
+    /* border: 1px solid #ccc; */
+    padding: 0 8px;
+    width: 100%;
+}
+.tabs {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 15px;
+    background-color: #3572c2;
+    transition: all 0.2s ease;
+}
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 4px 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-item:hover {
+    color: var(--primary-color)
+}
+.tab-item.active {
+    opacity: 1;
+    color: var(--primary-color);
+}
+.tab-content {
+    padding: 16px 12px 8px;
+}
+.tab-pane {
+    color: #333;
+    display: none;
+}
+.tab-para , .tab-pane span{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.tab-pane.active {
+    display: block;     
+}
+
+
+/* TOUR COMMMENT*/
+.tour-comment{
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+.tour-comment.hidden{
+    display: none;
+}
+.tour-comment:last-child{
+    border: none;
+}
+.tour-comment__avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 20rem;
+    margin-right:  16px;
+}
+
+.tour-comment__list{
+    padding-right: 20px;
+}
+.tour-comment__name{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.tour-comment__fb{
+    margin-top: 2px;
+}
+.tour-comment__fb-score{
+    border-radius:6px;
+    color:#ffffff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 3px 5px; 
+    margin-right: 4px;
+}
+.tour-comment__fb-score--high{
+    background-color: var(--high-color);
+}
+.tour-comment__fb-score--mid{
+    background-color: var(--secondary-color);
+}
+.tour-comment__fb-text{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.tour-comment__fb-text::after{
+    content: "";
+    border-right: 1px solid #ccc;
+    margin-left: 4px;
+}
+.tour-comment__fb-date{
+    font-size: 1.1rem;
+}
+.tour-comment__content{
+    padding-right: 20px;
+    margin-top: 6px;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+.more-btn{
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: block;
+    margin: 16px auto 0;
+    font-size: 1.3rem; 
+    background-color: #fff; 
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: all 0.5s;
+}
+.more-btn:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* Sidebar */
+.tour-sidebar{
+    position: sticky;
+    top: 65px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 16px;
+    max-height: 380px;
+}
+.tour-sidebar__heading{
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    margin: 20px 16px 12px;
+    font-weight: 600;
+}
+.tour-sidebar__label{
+    font-size: 1.6rem;
+    margin-left: 16px;
+}
+.tour-sidebar__date{
+    margin: 8px 16px;
+    display: flex;
+}
+.tour-sidebar__date-btn{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    opacity: 1;
+    flex: 1;
+    background-color: var(--primary-bc);
+    padding: 10px 12px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.tour-sidebar__date-btn:not(:last-child){
+    margin-right: 8px;
+}
+.tour-sidebar__date-btn:not(.active):hover{
+    opacity: 0.8;
+}
+.tour-sidebar__date-btn.active{
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.tour-sidebar__detail{
+    background-color: #e9f2f8;;
+    padding: 10px 12px;
+    margin: 8px 16px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.tour-sidebar__quantity{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    font-size: 1.5rem;
+}
+.tour-sidebar__person{
+    color: var(--primary-color);
+    flex:1;
+}
+.tour-sidebar__price{
+    flex: 1;
+    color:var(--secondary-color);
+    font-size: 1.6rem;
+}
+.tour-sidebar__icon{
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.tour-sidebar__number{
+    color: var(--text-color);
+}
+.tour-sidebar__sum{
+    margin: 16px 16px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.tour-sidebar__sum-text{
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+.tour-sidebar__sum-price{
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+.tour-sidebar__sum-price span{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+    
+}
+.tour-sidebar__btn{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0 16px 16px;
+    float: right;
+    text-decoration: none;
+}
+.tour-sidebar__btn:hover{
+    opacity: 0.8;
+}
+
+
+/* TOUR RECCOMMEND */
+.tour-recommend{
+    margin-left: -8px;
+}
+.tour-recommended__title{
+    padding-left: 4px;
+    margin: 50px 0 24px;
+    font-size: 2.6rem;
+    color: var(--primary-color);
+}
+.tour-item{
+    padding: 0 16px;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.tour-item:hover{
+    transform: scale(1.05);
+}
+.tour-item__img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+.tour-item__box{
+    text-decoration: none;
+}
+.tour-content{
+    background-color: #fff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 20px 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tour-content__desc{
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.tour-desc__location i, .tour-desc__time i,
+.tour-desc__id , .tour-desc__transport i,
+ .tour-desc__location span, .tour-desc__time span{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+.tour-desc__transport i{
+    margin-right: 4px;
+}
+
+.tour-content__heading{
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    height: 70px;
+    line-height: 1.4;
+    display: -webkit-box;
+    margin: 12px 0 0px;
+    text-decoration: none;
+}
+.tour-content__price{
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    float: right;
+    margin: 12px 0 0;
+}
+.tour-content__price span{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/* Email Section */
+.email-section{
+    margin-top: 80px;
+    background: url('/assets/img/Huế.png') center /cover no-repeat ;
+    position: relative;
+    height: 350px   ;
+}
+.email-section__img{
+    width: 100%;
+}
+.email-section__content{
+    z-index: 3;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-top: -6%;
+    margin-left: -20%;
+}
+.email-section__heading{
+    color: #fff;
+    font-size: 4.4rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+.email-section__message{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 8px;
+}
+.email-section__input{
+    margin: 40px auto;
+    display: block;
+    padding: 16px 20px;
+    width: 520px;
+    font-size: 1.6rem;
+    outline: none;
+    position: relative;
+    border-radius: 8px;
+    border: none;
+}
+.email-section__btn{
+    padding: 16px 20px;
+    position: absolute;
+    right: 44px;
+    top: 120px;
+    border: none;
+    background-color: #238CD9;
+    color: #fff;
+    font-size: 1.6rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 0.8;
+}
+.email-section__btn:hover{
+    opacity: 1;
+}
+/* Footer */
+.footer{
+    height: 400px;
+    background-color: #000;
+}
+.footer-content{
+    width: 1200px;
+    height: 220px;
+    margin: 0 auto;
+    transform: translateY(64px);
+}
+.footer__logo{
+
+}
+.footer__page-desc{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+}
+.footer__social i{
+    color: #fff;
+    font-size: 2.4rem;
+    padding-right: 8px;
+    margin-top: 8px;
+}
+.footer__about-us{
+    padding-left: 40px;
+}
+.footer__list{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+.footer__item{
+    margin-top: 20px;
+}
+.footer__contact{
+    display: flex;
+    align-items: center;
+}
+.footer__icon,.footer__item-text,.footer__contact-text{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.footer__icon{
+    padding-right: 12px;
+}
+.footer__copyright{
+    font-size: 1.2rem;
+    padding: 24px 0;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #898787;
+    margin-top: 112px;
+}
+    

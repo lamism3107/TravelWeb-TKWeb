@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/tour.css">
+    <title>Travel</title>
+</head>
+<body>
+    <div class="app">
+        <div class=" header">
+            <div class="container header__bar">
+                <a href="http://127.0.0.1:5500/index.html" class="header__logo-link">
+                    <img src="./assets/img/Travel.png" alt="" class="header__logo">
+                </a>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a class="header__nav-link" href="http://127.0.0.1:5500/index.html">Trang chủ</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">Giới thiệu</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="">Tour</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">Tin tức</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">Liên hệ</a></li>
+                </ul>
+                <div class="header__account">
+                    <img src="./assets/img/avt.jpg" alt="" class="header__account-avt">
+                    <p class="header__account-title">Tài khoản</p>
+                    <i class="header__account-down fa-solid fa-chevron-down"></i>
+                    <ul class="header__account-list">
+                        <li class="header__account-item"><a href="">
+                            <i class="header__account-icon fa-solid fa-user"></i>
+                            Thông tin tài khoản
+                        </a></li>
+                        <li class="header__account-item"><a href="">
+                            <i class="header__account-icon fa-solid fa-receipt"></i>
+                            Đơn hàng
+                        </a></li>
+                        <li class="header__account-item"><a href="">
+                            <i class="header__account-icon fa-solid fa-right-from-bracket"></i>
+                            Đăng xuất
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <form  class="search-box ">
+                <div class="search-box__content">
+                    <i class="search-box__icon fa-solid fa-location-dot"></i>
+                    <div class="search-box__text">
+                        <h2 class="search-box__title">Địa điểm</h2>
+                        <input type="text" placeholder="Đà Nẵng" class="search-box__input search-box__input--text">
+
+                        <div class="search-box__reccommend">
+                            <h1>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa điểm hot
+                            </h1>
+                            <div class="search-box__reccommend-box row">
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Đà Nẵng</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/tour-moi-nhat-2.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Nha Trang</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Sa Pa</span>
+                                </a>
+                            </div>
+                            <div class="search-box__reccommend-box row">
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Đà Lạt</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Tp.Hồ Chí Minh</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Ninh Bình</span>
+                                </a>
+                            </div>
+                            <div class="search-box__reccommend-box row">
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Phú Yên</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Cà Mau</span>
+                                </a>
+                                <a href="http://127.0.0.1:5500/tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Cần Thơ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-box__content">
+                    <i class="search-box__icon fa-solid fa-calendar"></i>
+                    <div class="search-box__text">
+                        <h2 class="search-box__title">Ngày khởi hành</h2>
+                        <input type="date" value="2023-1-12" class="search-box__input search-box__input--date">
+                        <div class="search-box__border"></div>
+                    </div>
+                </div>
+
+                <div class="search-box__content">
+                    <i class="search-box__icon fa-solid fa-location-dot"></i> 
+                    <div class="search-box__text">
+                        <h2 style="margin-left: 3px;" class="search-box__title">Khởi hành từ</h2>
+                        <select  class="search-box__select" name="location" id="">
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Tp.Hồ Chí Minh">Tp.Hồ Chí Minh</option>
+                            <option value="Nha Trang">Nha Trang</option>
+                            <option value="Cần Thơ">Cần Thơ</option>
+                        </select>
+                    </div>   
+                </div>
+                <div class="clear"></div>
+                <a href="http://127.0.0.1:5500/tour.html" class="search-box__btn">
+                    <i class="search-box__icon-search fa-solid fa-magnifying-glass"></i>
+                </a>
+            </form>
+        </div>
+        
+
+        <div class="tour-section row">
+            <div class="breadcum">
+                <i class="breadcum__icon fa-solid fa-house"></i>
+                <a href="" class="breadcum__link breadcum__link--home">Trang chủ / </a>
+                <a href="" class="breadcum__link">Đà Nẵng</a>
+            </div>
+
+
+            <!-- TOUR filter-->
+            <div class="tour-filter col col-xl-3">
+                <div class="tour-filter__box ">
+                    <h1 class="tour-filter__title">Điểm đến HOT </h1>
+                    <ul class="tour-filter__list">
+                        <li type="Sa Pa" class="tour-filter__item"><button class="tour-filter__link">Sa Pa</butt></li>
+                        <li type="Hà Nội" class="tour-filter__item"><button class="tour-filter__link">Hà Nội</butt></li>
+                        <li type="Nha Trang" class="tour-filter__item"><button class="tour-filter__link">Nha Trang</butt></li>
+                        <li type="Đà Nẵng" class="tour-filter__item active"><button class="tour-filter__link">Đà Nẵng</butt></li>
+                        <li type="Ninh Bình" class="tour-filter__item"><button class="tour-filter__link">Ninh Bình</butt></li>
+                        <li type="Nam Định" class="tour-filter__item"><button class="tour-filter__link">Hạ Long</butt></li>
+                        <li type="Phú Yên" class="tour-filter__item"><button class="tour-filter__link">Phú Yên</butt></li>
+                        <li type="Cần Thơ" class="tour-filter__item"><button class="tour-filter__link">Cần Thơ</butt></li>
+                    </ul>
+                </div>
+                <div class="tour-filter__box ">
+                    <h1 class="tour-filter__title">Danh mục Tour </h1>
+                    <ul class="tour-filter__list">
+                        <li class="tour-filter__item" type="Mới nhất"><button class="tour-filter__link">Tour du lịch mới nhất</butt></li>
+                        <li class="tour-filter__item" type="Địa phương"><button class="tour-filter__link"> Tour trải nghiệm địa phương</butt></li>
+                        <li class="tour-filter__item" type="Miền trung"><button class="tour-filter__link">Tour du lịch miền trung</butt></li>
+                        <li class="tour-filter__item" type="Nghỉ dưỡng"><button class="tour-filter__link">Tour du lịch nghỉ dưỡng</butt></li>
+                        <li class="tour-filter__item" type="Thám hiểm"><button class="tour-filter__link">Tour du lịch thám hiểm</butt></li>
+                        <li class="tour-filter__item" type="Vi vu"><button class="tour-filter__link">Tour vi vu cuối tuần</butt></li>
+                        <li class="tour-filter__item" type="Độc"><button class="tour-filter__link">Tour du lịch độc đáo</butt></li>
+                        <li class="tour-filter__item" type="Cao cấp"><button class="tour-filter__link">Tour du lịch cao cấp</butt></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Tour list-->
+            <div class="tour-list col col-xl-9">
+                <h1 class="tour-list__heading">Tour du lịch Đà Nẵng</h1>
+
+                <!-- Tour sort-->
+                <div class="tour-sort">
+                    <span class="tour-sort__title">Sắp xếp theo:</span>
+                    <a href="#" class="tour-sort__cate active">Travel đề xuất</a>
+                    <a href="#" class="tour-sort__cate">Ngày khởi hành gần nhất</a>
+                    <span class="tour-sort__price">
+                        Giá 
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="tour-sort__price-box">
+                            <div class="tour-sort__price-desc" href="">Giá: Thấp đến cao</div>
+                            <div class="tour-sort__price-desc" href="">Giá: Cao đến thấp</div>
+                        </div>
+                    </span>
+                </div>
+
+                <!-- Tour card-->
+                    <!-- TOUR ĐÀ NẴNG -->
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/ivivu-dong-thien-duong-204x153.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 5N4Đ: Hội An - Bà Nà - Huế - Động Phong Nha</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/Tour-da-nang-3.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng - Hội An 3N2Đ: Thiên Đường Miền Trung</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-da-nang-4.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 4N3Đ: Hội An - Quảng Bình - Huế</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-da-nang-5.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 4N3Đ: Sơn Trà - Hội An - Bà Nà (Cầu Vàng) - Huế</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-da-nang-6.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 5N4Đ: Hội An - Bà Nà - Huế - Động Phong Nha</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="row tour-item" type="Đà Nẵng">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-da-nang-7.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 3N2Đ: Sơn Trà - Bảo Tàng Phật Học - Hội An - Bà Nà</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                    <!-- TOUR SAPA-->
+                <div class="row tour-item hide" type="Sa Pa">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-1.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Hà Giang - Sapa 5N4Đ: HCM - Hà Nội - Lũng Cú - Đèo Mã Phì Lèng - Sông Nho Quế - Fansipan - Bản Cát Cát</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Dinh Thự</li>
+                            <li class="col-md-6 tour-item__notice-item">- Vua Mèo</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Cao Nguyên</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đá Đồng Văn</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 06.12.2023</span>
+                        <p class="tour-item__price">
+                            8.790.000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Sa Pa">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-2.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Miền Bắc 5N4Đ: HCM - Sapa - Lào Cai - Bái Đính - Hạ Long</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                5 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Chinh Phục Fansipan</li>
+                            <li class="col-md-6 tour-item__notice-item">- Vịnh Hạ Long</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Văn Hóa Xứ Bắc</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 29.11.2023</span>
+                        <p class="tour-item__price">
+                            8.290.000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Sa Pa">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-3.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">n
+                            Tour Miền Bắc 5N4Đ: HCM - Hà Giang - Sapa - Fansipan</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                5 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Chinh Phục Fansipan</li>
+                            <li class="col-md-6 tour-item__notice-item">- Văn Hóa Xứ Bắc</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Cao Nguyên Đá Hà Giang</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Sông Nho Quế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            9.990.000 VND
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Sa Pa">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-4.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour SaPa 3N2Đ: Chinh Phục Fansipan Xe Giường Nằm</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Sa Pa">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-5.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Miền Bắc 5N4Đ: Hà Nội - Hạ Long - Ninh Bình - SaPa</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+
+                    <!-- TOUR MỚI NHẤT-->              
+                <div class="row tour-item hide" type="Mới nhất">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-moi-nhat-1.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Nha Trang 1N : Đi Bộ Dưới Biển - Sea Walking</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Làng Chài</li>
+                            <li class="col-md-6 tour-item__notice-item">- Vịnh San Hô</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Sea Walking</li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            1.100.000 VND
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Mới nhất">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-moi-nhat-2.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Lạt 4N3Đ : Đà Lạt - Nha Trang - Thành Phố Hoa Biển</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            4.300.000 VND
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Mới nhất">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-moi-nhat-3.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Xe Lửa Cao Cấp Nha Trang 3N4Đ: Du Thuyền Đế Vương Trên Vịnh - City Tour</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Mới nhất">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-da-nang-7.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Đà Nẵng 3N2Đ: Sơn Trà - Bảo Tàng Phật Học - Hội An - Bà Nà</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="row tour-item hide" type="Mới nhất">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-sapa-5.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Miền Bắc 5N4Đ: Hà Nội - Hạ Long - Ninh Bình - SaPa</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <!-- TOUR CAO CÁP-->
+                <div class="row tour-item hide" type="Cao cấp">
+                    <div class="col col-md-3">
+                        <img class="tour-item__img" src="./assets/img/tour-cao-cap.jpg" alt="">
+                    </div>
+                    <div class="tour-item_info col col-md-6">
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__title">Tour Hạ Long 2N1Đ: Du Thuyền 5 Sao Dora Cruise Hạ Long - Lan Hạ</a>
+                        <div class="tour-item__desc">
+                            <span class="tour-item-info">Mã tour: 010101</span>
+                            <span class="tour-item-info">
+                                <i class="fa-solid fa-clock"></i>
+                                3 ngày 4 đêm
+                            </span>
+                            <span class="tour-item-info">Phương tiện
+                                <i class="fa-solid fa-bus"></i>
+                            </span>
+                        </div>
+
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Hội An</li>
+                            <li class="col-md-6 tour-item__notice-item">- Bà Nà Hill</li>
+                        </ul>
+                        <ul class="row tour-item__notice">
+                            <li class="col-md-6 tour-item__notice-item">- Động Thiên Đường</li>
+                            <li class="col-md-6 tour-item__notice-item"> - Đại Nội Huế</li>
+                        </ul>
+                    </div>
+                    <div class="tour-item__para col col-md-3">
+                        <span class="tour-item__time-start">Khởi hành: 22.11.2023</span>
+                        <p class="tour-item__price">
+                            2.500.0000 VNĐ
+                        </p>
+                        <a href="http://127.0.0.1:5500/tour_detail.html" class="tour-item__more-btn">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Section -->
+        <div class="email-section">
+            <div class="email-section__content">
+                <h1 class="email-section__heading">Hãy cùng trải nghiệm ngay nào</h1>
+                <h2 class="email-section__message">Đăng ký tài khoản email để nhận ưu đãi mới nhất từ nhà Travel</h2>
+                <input type="text" placeholder="Email" class="email-section__input">
+                <button class="email-section__btn">Đăng ký ngay</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content row">
+                <div class="col col-xl-3">
+                    <img src="./assets/img/TravelWhite.png" alt="" class="footer__logo">
+                    <p class="footer__page-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti doloribus optio. Alias ipsa veritatis accusamus, deserunt, officiis pariatur eum libero odit optio, necessitatibus minima nostrum provident doloremque laborum iste?</p>
+                    <div class="footer__social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+                <div class="footer__about-us col col-xl-3">
+                    <div class="footer__list">Về chúng tôi</div>
+                    <div class="footer__item">
+                        <p class="footer__item-text">Trang chủ</p>
+                        <br>
+                        <p class="footer__item-text">Giới thiêu</p>
+                        <br>
+                        <p class="footer__item-text">Tour</p>
+                        <br>
+                        <p class="footer__item-text">Tin tức</p>
+                    </div>
+                </div>
+
+                <div class="col col-xl-3">
+                    <div class="footer__list">Khác</div>
+                    <div class="footer__item">
+                        <p class="footer__item-text">Chính sách và quyền riêng</p>
+                        <br>
+                        <p class="footer__item-text">Điều khoản và điều kiện</p>
+                        <br>
+                        <p class="footer__item-text">Quy chế hoạt động</p>
+                    </div>
+                </div>
+
+                <div class="col col-xl-3">
+                    <div class="footer__list">Liên hệ</div>
+                    <div class="footer__item">
+                        <div class="footer__contact">
+                            <i class="footer__icon fa-solid fa-envelope"></i>
+                            <p class="footer__contact-text">travel@gmail.com</p>
+                        </div>
+                       <div class="footer__contact">
+                            <i class="footer__icon fa-solid fa-phone"></i>
+                            <p class="footer__contact-text">+84 2345 32334</p>
+                       </div>
+                       <div class="footer__contact">
+                            <i class="footer__icon fa-solid fa-location-dot"></i>
+                            <p style="width:200px;" class="footer__contact-text">Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">Copyright
+                <i class="fa-regular fa-copyright">2023 Travel</i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+    
+        /* Header Account */
+        const headerAcc = document.querySelector('.header__account');
+        const headerAccList = document.querySelector('.header__account-list');
+        const headerAccIcon = document.querySelector('.header__account i');
+        const app = document.querySelector('.app');
+    
+        function toggleHeaderAccount(){
+            headerAcc.classList.toggle('active');
+        }
+        headerAcc.addEventListener('click', toggleHeaderAccount) ; 
+     
+        
+    
+        /*Sort */
+        const sortBtns = document.querySelectorAll('.tour-sort__cate');
+        const sortByPriceChoice = document.querySelectorAll('.tour-sort__price-desc');
+        const sortByPrices = document.querySelector('.tour-sort__price');
+    
+        sortBtns.forEach((sortBtn, index) => {
+            sortBtn.onclick = function(){
+                $(".tour-sort__cate.active").classList.remove('active');
+                this.classList.add('active');
+            }
+        })
+    
+        sortByPrices.onclick = function() {
+            this.classList.toggle('active');
+        }
+      
+        sortByPriceChoice.forEach((sort, index) => {
+            console.log(sort);
+    
+            sort.onclick = function(){
+                console.log(sort);
+                sortByPrices.innerHTML = ` ${this.innerText}
+                             <div class="tour-sort__price-box">
+                                <div class="tour-sort__price-desc" href="">Giá: Thấp đến cao</div>
+                                <div class="tour-sort__price-desc" href="">Giá: Cao đến thấp</div>
+                            </div> `;
+            }
+        })
+        document.addEventListener('click', function(event) {
+            if(!sortByPrices.contains(event.target)) {
+                sortByPrices.classList.remove('active');  
+            }
+        });
+    
+
+        /* Filter */
+        const filterItemsCate = document.querySelectorAll('.tour-filter__item-cate');    
+        const filterBtn = document.querySelectorAll('.tour-filter__item');
+        const tourItem = document.querySelectorAll('.tour-item');
+        const tourTitle = document.querySelector('.tour-list__heading');   
+    
+        filterBtn.forEach((filterItem, index) => {
+            filterItem.onclick = function(){
+                $(".tour-filter__item.active").classList.remove('active');
+                this.classList.add('active');
+            }
+        })
+        filterBtn.forEach(function(btn){
+            btn.addEventListener('click', function(e){
+               let type = e.currentTarget.getAttribute('type');
+               console.log(type);
+               tourItem.forEach(item => {
+    
+                    let itemType = item.getAttribute('type');
+                    console.log(itemType);
+    
+                    if(type == itemType){
+                        tourTitle.innerText  = `Tour du lịch ${type}`;
+                        item.classList.remove('hide');
+                    }
+                    else {
+                        item.classList.add('hide');
+                    }
+               })
+            })
+        })
+    
+    
+        /*Search-box*/
+        const searchInput = document.querySelector('.search-box__input--text');
+        const searchRec = document.querySelector('.search-box__reccommend');
+        searchInput.onclick = () =>{
+            searchRec.style.display = 'block';
+        }
+        document.addEventListener('click', function(event) {
+            if(!searchInput.contains(event.target)) {
+                searchRec.style.display = 'none'; 
+            }
+        });
+        searchInput.addEventListener('input', function() {
+            searchRec.style.display = 'none'; 
+        });
+    
+        /* Prevent default */
+        const link = document.querySelectorAll('a[href*="#"]');
+        for(var i = 0; i < link.length; i++){
+            link[i].addEventListener('click', function(e){
+                e.preventDefault;
+            })
+        }
+    
+    </script>
+</body>
+</html>

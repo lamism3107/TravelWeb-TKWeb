@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/order.css">
+        <title>Đặt tour</title>
+    </head>
+    <body>
+        <div class="app">
+            <!--Header -->
+            <div class=" header">
+                <div class="container header__bar">
+                    <a href="http://127.0.0.1:5500/index.html" class="header__logo-link">
+                        <img src="./assets/img/Travel.png" alt="" class="header__logo">
+                    </a>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item "><a class="header__nav-link header__nav-link" href="">Trang chủ</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link " href="">Giới thiệu</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link " href="http://127.0.0.1:5500/tour.html">Tour</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Tin tức</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="">Liên hệ</a></li>
+                    </ul>
+                    <div class="header__account">
+                        <img src="./assets/img/avt.jpg" alt="" class="header__account-avt">
+                        <p class="header__account-title">Tài khoản</p>
+                        <i class="header__account-down fa-solid fa-chevron-down"></i>
+                        <ul class="header__account-list">
+                            <li class="header__account-item"><a href="">
+                                <i class="header__account-icon fa-solid fa-user"></i>
+                                Thông tin tài khoản
+                            </a></li>
+                            <li class="header__account-item"><a href="">
+                                <i class="header__account-icon fa-solid fa-receipt"></i>
+                                Đơn hàng
+                            </a></li>
+                            <li class="header__account-item"><a href="">
+                                <i class="header__account-icon fa-solid fa-right-from-bracket"></i>
+                                Đăng xuất
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Breadcum-->
+            <div class="breadcum">
+                <i class="breadcum__icon fa-solid fa-house"></i>
+                <a href="" class="breadcum__link breadcum__link--home">Trang chủ / </a>
+                <a href="" class="breadcum__link">Đặt tour </a>
+        
+            </div>
+
+            <!-- Order section -->
+            <section class="order-section row">
+                <h1 class="order-section__heading">Tour bạn dự định đặt</h1>
+                <div class="order-section-list col col-xl-6 ">
+                    <div class="tour-info-box">
+                        <img src="./assets/img/ivivu-dong-thien-duong-204x153.jpg" alt="" class="tour-info__img">
+                        <div class="tour-info__content">
+                            <h1 class="tour-info__title">Tour Đà Nẵng 5N4Đ: Hội An - Bà Nà - Huế - Động Phong Nha</h1>
+                    
+                            <div class="tour-info__depart row">
+                                <span class="col col-xl-6" >Khởi hành từ:
+                                    <br>
+                                    <strong class="col col-xl-6">Hà Nội</strong>
+                                </span>
+                                <span class="col col-xl-6">
+                                    Ngày khởi hành: 
+                                    <br>
+                                    <strong class="col col-xl-6">20/12/2023</strong>
+                                </span>
+                            </div>
+                            
+                        <div class="tour-info__depart row">
+                                <span class="col col-xl-6">Người lớn:       
+                                    <span class="tour-info__quantity">2</span>
+                                </span>
+                                <span class="col col-xl-6">Trẻ em: 
+                                    <span class="tour-info__quantity">0</span>
+                                </span>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="tour-info__price">
+                        <h1 class="tour-info__price-label">Thông tin thanh toán</h1>
+                        <div class="tour-info__price-detail">
+                            <p>Số tiền phải thanh toán</p>
+                            <div class="tour-info__price-number">4.050.000 VND</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-order__form col col-xl-6">
+                    <form action="" class="tour-order ">
+                        <h1 class="tour-order__heading">Thông tin khách hàng</h1>
+                        <div class="tour-order__info">
+                            <label  for="" class="tour-order__label">Họ và tên <span class="tour-order__note">*</span></label>
+                            <input required id="Họ tên" type="text" placeholder="" class="tour-order__input">
+                        </div>
+                    
+                        <div class="tour-order__info ">
+                            <label for="" class="tour-order__label">Email <span class="tour-order__note">*</span></label>
+                            <input required id="Họ tên" type="email" placeholder="" class="tour-order__input">
+                        </div>
+                        <div class="tour-order__info">
+                            <label for="" class="tour-order__label">Số điện thoại <span class="tour-order__note">*</span></label>
+                            <input required id="Họ tên" type="text" placeholder="" class="tour-order__input">
+                        </div>
+                        <div class="tour-order__info">
+                            <label for="" class="tour-order__label">Yêu cầu khác <span class="tour-order__note">(nếu có)</span></label>
+                            <textarea required id="Họ tên" type="text" placeholder="" class="tour-order__textarea"></textarea>
+                        </div>
+                        <button class="tour-order__submit">Đặt tour</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- Email Section -->
+            <div class="email-section">
+                <div class="email-section__content">
+                    <h1 class="email-section__heading">Hãy cùng trải nghiệm ngay nào</h1>
+                    <h2 class="email-section__message">Đăng ký tài khoản email để nhận ưu đãi mới nhất từ nhà Travel</h2>
+                    <input type="email" placeholder="Email" class="email-section__input">
+                    <button  class="email-section__btn">Đăng ký ngay</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-content row">
+                    <div class="col col-xl-3">
+                        <img src="./assets/img/TravelWhite.png" alt="" class="footer__logo">
+                        <p class="footer__page-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti doloribus optio. Alias ipsa veritatis accusamus, deserunt, officiis pariatur eum libero odit optio, necessitatibus minima nostrum provident doloremque laborum iste?</p>
+                        <div class="footer__social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+
+                    <div class="footer__about-us col col-xl-3">
+                        <div class="footer__list">Về chúng tôi</div>
+                        <div class="footer__item">
+                            <p class="footer__item-text">Trang chủ</p>
+                            <br>
+                            <p class="footer__item-text">Giới thiêu</p>
+                            <br>
+                            <p class="footer__item-text">Tour</p>
+                            <br>
+                            <p class="footer__item-text">Tin tức</p>
+                        </div>
+                    </div>
+
+                    <div class="col col-xl-3">
+                        <div class="footer__list">Khác</div>
+                        <div class="footer__item">
+                            <p class="footer__item-text">Chính sách và quyền riêng</p>
+                            <br>
+                            <p class="footer__item-text">Điều khoản và điều kiện</p>
+                            <br>
+                            <p class="footer__item-text">Quy chế hoạt động</p>
+                        </div>
+                    </div>
+
+                    <div class="col col-xl-3">
+                        <div class="footer__list">Liên hệ</div>
+                        <div class="footer__item">
+                            <div class="footer__contact">
+                                <i class="footer__icon fa-solid fa-envelope"></i>
+                                <p class="footer__contact-text">travel@gmail.com</p>
+                            </div>
+                        <div class="footer__contact">
+                                <i class="footer__icon fa-solid fa-phone"></i>
+                                <p class="footer__contact-text">+84 2345 32334</p>
+                        </div>
+                        <div class="footer__contact">
+                                <i class="footer__icon fa-solid fa-location-dot"></i>
+                                <p style="width:200px;" class="footer__contact-text">Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">Copyright
+                    <i class="fa-regular fa-copyright">2023 Travel</i>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+        const headerAcc = document.querySelector('.header__account');
+        const headerAccList = document.querySelector('.header__account-list');
+        const headerAccIcon = document.querySelector('.header__account i');
+
+        console.log(headerAccList);
+        headerAcc.addEventListener('click', function(){
+            console.log(headerAcc);
+            
+            headerAcc.classList.toggle('active');
+        })
+    </script>
+</html>
