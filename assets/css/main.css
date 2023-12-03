@@ -182,7 +182,7 @@ body{
     position: relative;
     margin-top: 45px;
     height: 425px;
-    background: url('/assets/img/slider.jpg')  center /cover no-repeat;
+    background: url('assets/img/slider.jpg')  center /cover no-repeat;
 
 }
 
