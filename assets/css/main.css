@@ -648,10 +648,10 @@ body{
     font-size: 1.6rem;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
-    opacity: 0.8;
+    opacity: 1;
 }
 .email-section__btn:hover{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 /* Footer */
