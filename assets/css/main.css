@@ -16,7 +16,8 @@ body{
     background-color: #ecf0f5;
 }
 :root{
-    --primary-color: #2484c8;
+    --primary-color: #0970BB;
+    --third-color: #292868;
     --primary-bc: rgb(220, 237, 249);
     --text-color: #4d4d4d;
     --secondary-color: #FF9052;
@@ -36,18 +37,22 @@ body{
 .background-black{
     background-color: #000;
 }
-
+.text-underline{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: var(--text-color)
+}
 
 /* Header */
 .header{
     position:fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     top: 0;
     right:0;
     left:0;
     background-color: #fff;
-    height: 65px;
+    height: 60px;
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,15 +60,18 @@ body{
 }
 .header__bar{
     width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__logo{
-    transform: translateY(-30%);
+    transform: translateY(-12%);
 }
 .header__nav-list{
     display: inline-block;
     text-align: center;
-    margin-left: 15%;
     margin-bottom: 0;
+    padding: 0;
 }
 .header__nav-item{
     display: inline-block;
@@ -78,7 +86,7 @@ body{
 }
 .header__nav-link{
     max-width: 100%;
-    line-height: 65px;
+    line-height: 60px;
     font-size: 1.6rem;
     color: #000;
     text-decoration: none;
@@ -105,11 +113,11 @@ body{
     display:inline-block;
     border-radius: 50%;
     margin-right: 8px;
-    transform: translateY(-4px);
+    transform: translateY(-2px);
 }
 .header__account-title{
     display: inline-block;
-    line-height: 65px;
+    line-height: 60px;
     font-size: 1.6rem;
     margin: 0;
 }
@@ -136,15 +144,17 @@ body{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease ;
+    animation: fadeIn 0.3s ease ;
     overflow: hidden;
 }
 @keyframes fadeIn{
     from {
+        opacity: 0;
         height: 0;
     }
     to {
-        height: 140px;
+        opacity:  1;
+        height: 126px;
     }
 }
 .header__account-item:hover a,
@@ -200,7 +210,7 @@ body{
 .search-box__reccommend{
     display: none;
     z-index: 4;
-    width: 500px;
+    width: 530px;
     position: absolute;
     left: 0;
     top: 90%;
@@ -224,12 +234,14 @@ body{
     align-items: center;
     text-decoration: none;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 .search-box__location:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #d0eafd;
 }
 .search-box__location img{
     width: 50px;
+    height: 50px;
     margin-right: 8px;
     border-radius: 4px;
 }
@@ -324,6 +336,7 @@ body{
     margin-top: 130px;
 }
 .section-heading{
+    color: var(--third-color);
     font-size: 3rem;
     font-weight: 600;
     margin-top: 12px;
@@ -335,6 +348,7 @@ body{
 }
 .service-title{
     font-size: 1.7rem;
+    color: var(--third-color);
     margin-top: 24px;
 }
 .service-desc{
@@ -369,41 +383,43 @@ body{
 .tour-item__box{
     text-decoration: none;
 }
-.tour-item__box:hover .tour-content{
+/* .tour-item__box:hover .tour-content{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 .tour-content{
     background-color: #fff;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    padding: 0 20px 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 16px 16px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 
 }
 .tour-content__desc{
-    padding-top: 16px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.tour-desc__location i, .tour-desc__time i,
-.tour-desc__id , .tour-desc__transport i,
+.tour-desc__location i, .tour-desc__time i, .tour-desc__id span, .tour-desc__transport i{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-right: 4px;
+}
+.tour-desc__id, 
  .tour-desc__location span, .tour-desc__time span{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text-color);
 }
 
 .tour-desc__transport i{
     margin-right: 4px;
 }
-.tour-content__title{
 
-}
 .tour-content__heading{
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    color: var(--primary-color);
-    font-size: 1.7rem;
+    color: var(--third-color);
+    font-size: 1.8rem;
     font-weight: 600;
     height: 70px;
     line-height: 1.4;
@@ -423,9 +439,11 @@ body{
     font-weight: 600;
 }
 .more-btn{
+    text-decoration: none;
     padding: 8px 12px;
     border-radius: 4px;
     display: block;
+    width: 85px;
     margin: 16px auto 0;
     font-size: 1.3rem; 
     background-color: #fff; 
@@ -549,7 +567,7 @@ body{
     margin-bottom: 8px;
 }
 .section-6__cate{
-
+    color: var(--primary-color);
 }
 .section-6__cate::after{
     content: "";
@@ -565,7 +583,7 @@ body{
     -webkit-line-clamp: 3;
     font-weight: 600;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--third-color);
     margin: 0 0 8px;
     text-align: justify;
 }
@@ -638,23 +656,23 @@ body{
 
 /* Footer */
 .footer{
-    height: 400px;
-    background-color: #000;
+    min-height: 424px;
+    background-color: #282828;
 }
 .footer-content{
-    width: 1200px;
-    height: 220px;
+    width: 1100px;
+    min-height: 220px;
     margin: 0 auto;
     transform: translateY(60px);
 }
 
 .footer__page-desc{
     font-size: 1.5rem;
-    color: #fff;
+    color: #dfdfdf;
     margin-top: 20px;
 }
 .footer__social i{
-    color: #fff;
+    color: #dfdfdf;
     font-size: 2.4rem;
     padding-right: 8px;
     margin-top: 8px;
@@ -665,7 +683,7 @@ body{
 .footer__list{
     font-size: 1.6rem;
     font-weight: 700;
-    color: #fff;
+    color: #dfdfdf;
 }
 .footer__item{
     margin-top: 20px;
@@ -675,7 +693,7 @@ body{
     align-items: center;
 }
 .footer__icon,.footer__item-text,.footer__contact-text{
-    color: #fff;
+    color: #dfdfdf;
     font-size: 1.5rem;
     margin: 0;
     padding-bottom: 8px;
@@ -687,7 +705,7 @@ body{
 .footer__copyright{
     font-size: 1.2rem;
     padding: 20px 0;
-    color: #fff;
+    color: #dfdfdf;
     text-align: center;
     transform: translateY(100px);
     border-top: 1px solid #ccc;

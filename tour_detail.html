@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/tour_detail.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Travel</title>
 </head>
 <body>
@@ -47,7 +48,6 @@
                     </ul>
                 </div>
 
-                <div class="clear"></div>
             </div>
         </div>
 
@@ -548,7 +548,72 @@
                             <div class="tour-comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium voluptatum ab, facere possimus iusto expedita vitae esse rerum nostrum neque, deserunt nulla iure similique delectus sit debitis accusamus. Ab.</div>
                         </div>
                     </div>  
-                    <button class="more-btn"> Xem thêm (4) </button>
+                    <div class="tour-comment hidden">
+                        <div class="tour-comment__avt">
+                            <img class="tour-comment__avt
+                            " src="./assets/img/avt.jpg" alt="">
+                        </div>
+                       
+                        <div class="tour-comment__list">
+                            <div class="tour-comment__name">Trần Xuân Lâm</div>
+                            <div class="tour-comment__fb">
+                                <span class="tour-comment__fb-score tour-comment__fb-score--mid">7.0</span>
+                                <span class="tour-comment__fb-text">Khá tốt</span>
+                                <span class="tour-comment__fb-date">28/08/2023</span>
+                            </div>
+                            <div class="tour-comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium voluptatum ab, facere possimus iusto expedita vitae esse rerum nostrum neque, deserunt nulla iure similique delectus sit debitis accusamus. Ab.</div>
+                        </div>
+                    </div>
+                    <div class="tour-comment hidden">
+                        <div class="tour-comment__avt">
+                            <img class="tour-comment__avt
+                            " src="./assets/img/avt.jpg" alt="">
+                        </div>
+                       
+                        <div class="tour-comment__list">
+                            <div class="tour-comment__name">Trần Xuân Lâm</div>
+                            <div class="tour-comment__fb">
+                                <span class="tour-comment__fb-score tour-comment__fb-score--mid">7.0</span>
+                                <span class="tour-comment__fb-text">Khá tốt</span>
+                                <span class="tour-comment__fb-date">28/08/2023</span>
+                            </div>
+                            <div class="tour-comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium voluptatum ab, facere possimus iusto expedita vitae esse rerum nostrum neque, deserunt nulla iure similique delectus sit debitis accusamus. Ab.</div>
+                        </div>
+                    </div>
+                    <div class="tour-comment hidden">
+                        <div class="tour-comment__avt">
+                            <img class="tour-comment__avt
+                            " src="./assets/img/avt.jpg" alt="">
+                        </div>
+                       
+                        <div class="tour-comment__list">
+                            <div class="tour-comment__name">Trần Xuân Lâm</div>
+                            <div class="tour-comment__fb">
+                                <span class="tour-comment__fb-score tour-comment__fb-score--mid">8.0</span>
+                                <span class="tour-comment__fb-text">Tốt</span>
+                                <span class="tour-comment__fb-date">28/08/2023</span>
+                            </div>
+                            <div class="tour-comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium voluptatum ab, facere possimus iusto expedita vitae esse rerum nostrum neque, deserunt nulla iure similique delectus sit debitis accusamus. Ab.</div>
+                        </div>
+                    </div>
+                    <div class="tour-comment hidden">
+                        <div class="tour-comment__avt">
+                            <img class="tour-comment__avt
+                            " src="./assets/img/avt.jpg" alt="">
+                        </div>
+                       
+                        <div class="tour-comment__list">
+                            <div class="tour-comment__name">Trần Xuân Lâm</div>
+                            <div class="tour-comment__fb">
+                                <span class="tour-comment__fb-score tour-comment__fb-score--mid">8.0</span>
+                                <span class="tour-comment__fb-text">Tốt</span>
+                                <span class="tour-comment__fb-date">28/08/2023</span>
+                            </div>
+                            <div class="tour-comment__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium voluptatum ab, facere possimus iusto expedita vitae esse rerum nostrum neque, deserunt nulla iure similique delectus sit debitis accusamus. Ab.</div>
+                        </div>
+                    </div>  
+
+                    <button style="width: unset;" class="more-btn more-btn__comment">Xem thêm (4)</button>
                 </div>  
             </div>     
         
@@ -557,29 +622,29 @@
                 <h1 class="tour-sidebar__heading">Lịch khởi hành và giá</h1>
                 <div class="tour-sidebar__label">Chọn ngày khởi hành</div>
                 <div class="tour-sidebar__date">
-                    <span class="tour-sidebar__date-btn active">22/11</span>
-                    <span class="tour-sidebar__date-btn">25/11</span>
-                    <span class="tour-sidebar__date-btn">29/11</span>
-                    <span class="tour-sidebar__date-btn">30/11</span>
+                    <button type="button" class="tour-sidebar__date-btn active">22/11</button>
+                    <button type="button" disabled class="tour-sidebar__date-btn" >25/11</button>
+                    <button type="button" class="tour-sidebar__date-btn">29/11</button>
+                    <button type="button" class="tour-sidebar__date-btn">02/12</button>
                 </div>
 
                 <div class="tour-sidebar__detail">
                     <span class="tour-sidebar__person">Người lớn</span>
-                    <span class="tour-sidebar__price">x 4.050.000</span>
+                    <span class="tour-sidebar__price tour-sidebar__price--adult">x 4.050.000</span>
                     <span class="tour-sidebar__quantity">
-                        <span class="tour-sidebar__icon">-</span>
-                        <span class="tour-sidebar__number">2</span>
-                        <span class="tour-sidebar__icon">+</span>
+                        <span class="tour-sidebar__icon tour-sidebar__icon--adult">-</span>
+                        <span class="tour-sidebar__number tour-sidebar__number--adult">0</span>
+                        <span class= "tour-sidebar__icon  tour-sidebar__icon--adult">+</span>
                     </span>
                     
                 </div>
                 <div class="tour-sidebar__detail">
-                    <span class="tour-sidebar__person">Trẻ em</span>
-                    <span class="tour-sidebar__price"></span>
+                    <span style="margin-right: 1px;" class="tour-sidebar__person">Trẻ em (dưới 18 tuổi)</span>
+                    <span class="tour-sidebar__price tour-sidebar__price--child">x 3.050.000</span>
                     <span class="tour-sidebar__quantity">
-                        <span class="tour-sidebar__icon">-</span>
-                        <span class="tour-sidebar__number">0</span>
-                        <span class="tour-sidebar__icon">+</span>
+                        <span class="tour-sidebar__icon tour-sidebar__icon--child">-</span>
+                        <span class="tour-sidebar__number tour-sidebar__number--child">0</span>
+                        <span class="tour-sidebar__icon  tour-sidebar__icon--child">+</span>
                     </span>
                 </div>
                 <div class="tour-sidebar__sum">
@@ -589,14 +654,14 @@
                         <span>VND</span>
                     </p>
                 </div>
-                <a href="" class="tour-sidebar__btn">Yêu cầu đặt</a>
+                <a href="http://127.0.0.1:5500/order.html" class="tour-sidebar__btn">Yêu cầu đặt</a>
             </div>
         </section>
 
         <!--Tour Recommended-->
         <section class="tour ">
             <h1 class="tour-recommended__title">Các tour du lịch liên quan</h1>
-            <div class="tour-list row">
+            <div style="margin-top:12px;" class="tour-list row">
                 <div class="tour-item col col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/Tour-mien-trung.jpg" alt="" class="tour-item__img">
@@ -837,35 +902,177 @@
         }
     })
 
+
+    //Ticket Quantity
+    const adultQuantity = document.querySelectorAll('.tour-sidebar__icon--adult');
+    const childQuantity = document.querySelectorAll('.tour-sidebar__icon--child')
+    const adultNumber = document.querySelector('.tour-sidebar__number--adult');
+    const childNumber = document.querySelector('.tour-sidebar__number--child');
+    const firstPriceAdult = document.querySelector('.tour-sidebar__price--adult');
+    const firstPriceChild = document.querySelector('.tour-sidebar__price--child')
+    const price = document.querySelector('.tour-sidebar__sum-price');
+    const pricetmp = firstPriceAdult.innerText;
+    const pricetmpChild = firstPriceChild.innerText;
+
+    // Hàm lấy ra số tiền
+    function getPrice(price){
+        let priceNum = 10000;
+        let priceString = "";
+        var pos = price.indexOf(' ');
+        priceString = price.slice(pos + 1).split('.').join('');
+        // console.log(priceString);
+        priceNum = parseInt(priceString);
+        return priceNum;
+    }
+
+    //Hàm format tiền
+    function formatPrice(price){
+        var b = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        b = b + " VNĐ"
+        return b;
+    }
+
+    //Xử lý giá người lớn
+    let num = 0;
+    let priceAdult = 0;
+    for(var i = 0; i < adultQuantity.length; i++){
+        adultQuantity[i].addEventListener('click', function(e){
+            if(numChild === 0){
+                if(num >0){
+                    if(e.target.innerText === '-'){
+                        num-=1;
+                        priceAdult = getPrice(pricetmp);
+                        priceAdult *= num;
+                        adultNumber.innerText = num + "";
+                    }
+                    else if(e.target.innerText === '+') {
+                        num+=1;
+                        priceAdult = getPrice(pricetmp);
+                        priceAdult *= num;
+                        adultNumber.innerText = num + "";
+
+                    }
+                }
+                else if(num ===0){
+                    if(e.target.innerText ==='+'){
+                        console.log(e.target);
+                        num+=1;
+                        priceAdult = getPrice(pricetmp);
+                        adultNumber.innerText = num + "";
+                        priceAdult*=num;
+                    }
+                }
+                price.innerText = formatPrice(priceAdult);
+            }
+            else{
+                if(num >0){
+                    if(e.target.innerText === '-'){
+                        num-=1;
+                        priceAdult = getPrice(pricetmp);
+                        priceAdult *= num;
+                        adultNumber.innerText = num + "";
+                    }
+                    else if(e.target.innerText === '+') {
+                        num+=1;
+                        priceAdult = getPrice(pricetmp);
+                        priceAdult *= num;
+                        adultNumber.innerText = num + "";
+
+                    }
+                }
+                else if(num ===0){
+                    if(e.target.innerText ==='+'){
+                        console.log(e.target);
+                        num+=1;
+                        priceAdult = getPrice(pricetmp);
+                        adultNumber.innerText = num + "";
+                        priceAdult*=num;
+                    }
+                }
+                var tmp = priceAdult + priceChild;
+                price.innerText = formatPrice(tmp);
+            }
+        })
+    }
+
+    //Xử lý giá trẻ con
+    let numChild = 0;
+    let priceChild = 0;
+    for(var i = 0; i < childQuantity.length;i++){
+        childQuantity[i].addEventListener('click', function(e){
+            if(num === 0){
+                if(numChild >0){
+                    if(e.target.innerText === '-'){
+                        numChild-=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+                    }
+                    else if(e.target.innerText === '+') {
+                        numChild+=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+
+                    }
+                }
+                else if(numChild === 0){
+                    if(e.target.innerText ==='+'){
+                        numChild+=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+                    }
+                }
+                price.innerText =  formatPrice(priceChild);
+            }
+            else{
+                if(numChild >0){
+                    if(e.target.innerText === '-'){
+                        numChild-=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+                    }
+                    else if(e.target.innerText === '+') {
+                        numChild+=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+                    }
+                }
+                else if(numChild === 0){
+                    if(e.target.innerText ==='+'){
+                        numChild+=1;
+                        childNumber.innerText = numChild + "";
+                        priceChild = getPrice(pricetmpChild);
+                        priceChild *= numChild;
+                    }
+                }
+                price.innerText = formatPrice(priceChild + priceAdult) ;
+            }    
+        })
+    }
+ 
+
     //Comment//
-    const commentMore = document.querySelector('.tour-comment__more');
+    const commentBtn = document.querySelector('.more-btn');
     const commentHidden = document.querySelectorAll(".tour-comment.hidden");
     console.log(commentHidden);
 
-    // commentMore.addEventListener('click', function(){
-    //     // $('.tour-comment.hidden').classList.remove('hidden');
-    //     for(var i = 0; i < commentHidden.length; i++){
-    //         commentHidden[i].remove('hidden');
-    //     }
-    //     commentMore[i].innerText = 'Thu gọn';
-    //     // for(var i = 0; i < commentHidden.length; i++){
-    //     //     console.log(commentMore[i].innerText);
-
-    //     //     // if(commentMore.innerText.'Thu gọn'){
-    //     //     //     commentMore.addEventListener('click', function(){
-    //     //     //         for(var j = 0; j < 4; j++){
-    //     //     //             commentHidden[j].classList.add('hidden');
-    //     //     //             commentMore.innerText = 'Xem thêm (4)';
-    //     //     //     }
-    //     //     //     })
-    //     //     // }
-    //     //     // else{
-           
-    //     //     // }
-    //     // }
-
-
-    // })
+    commentBtn.onclick = function(){
+        if(commentBtn.innerText = 'Xem thêm (4)'){
+            for(var i = 0; i < 4; i++){
+                $(".tour-comment.hidden").classList.remove('hidden');
+            }
+        }
+        // else{
+        //     for(var i = 0; i < 4; i++){
+        //         $(".tour-comment").classList.add('hidden');
+        //     }
+        //     commentBtn.innerText = 'Xem thêm (4)';
+        // }
+    }
 
 
     
@@ -874,13 +1081,18 @@
     const headerAccList = document.querySelector('.header__account-list');
     const headerAccIcon = document.querySelector('.header__account i');
 
-    console.log(headerAccList);
-    console.log(headerAcc);
+    // console.log(headerAccList);
+    // console.log(headerAcc);
 
     headerAcc.addEventListener('click', function(){
         console.log(headerAcc);   
         headerAcc.classList.toggle('active');
         
     })
+    // document.addEventListener('click', function(event) {
+    //     if(!headerAccList.contains(event.target)) {
+    //         headerAcc.remove('active'); 
+    //     }
+    // });
 </script>
 </html>

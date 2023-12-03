@@ -1,0 +1,118 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px){
+    .header__bar{
+        width: 800px;
+    }
+    .header__nav-item{
+        margin: 0 12px;
+    }
+    .section{
+        width: 800px;
+    }
+    .tour-item{
+        padding: 0 12px;
+        margin: 20px auto 16px;
+    }
+    .section-6-item{
+        padding: 16px 12px;
+    }
+    .email-section__content{
+        margin-top: -8%;
+        margin-left: -30%;
+    }
+    .footer{
+        overflow: hidden;
+        min-height: 500px;
+    }
+    .footer__copyright{
+        transform: translateY(70px);
+    }
+    .footer-content{
+        width: 800px;
+    }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1024px){
+ 
+    /* #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .btn {
+        padding: 16px 18px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+    .contact-info{
+        line-height: 2;
+    }
+    .footer-icon a{
+        margin: 0 8px;
+        font-size: 48px;
+    }
+    .footer-icon a{
+        line-height: 2;
+    } */
+}
+/* Mobile */
+@media (max-width: 740px){
+    /* .s-col-full{
+        width: 100% !important;
+    }
+    .s-mt-16{
+        margin-top: 16px !important;
+    }
+    /* .s-row{
+        margin-left: -8px;
+        margin-right: -8px;
+    } */
+    /* #header{
+        overflow: hidden;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        padding: 1px;
+    }
+    #nav > li > a {
+        /* padding: 1px 24px; */
+    }
+    /* #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 36px;
+    }
+    .band-item{
+        float:initial;
+        
+    }
+    #content .member-avt{
+        width: 60%;
+    }  */
+  
+    
+    
+}

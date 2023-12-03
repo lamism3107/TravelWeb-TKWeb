@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Trang chủ</title>
 </head>
 <body>
     <div class="app">
         <div class=" header">
-            <div class="container header__bar">
+            <div class=" header__bar">
                 <a href="" class="header__logo-link">
-                    <img src="./assets/img/Travel.png" alt="" class="header__logo">
+                    <img src="/assets/img/Travel.png" alt="" class="header__logo">
                 </a>
                 <ul class="header__nav-list">
                     <li class="header__nav-item "><a class="header__nav-link header__nav-link--active" href="">Trang chủ</a></li>
                     <li class="header__nav-item"><a class="header__nav-link " href="">Giới thiệu</a></li>
-                    <li class="header__nav-item"><a class="header__nav-link " href="http://127.0.0.1:5500/tour.html">Tour</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link " href="tour.html">Tour</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="">Tin tức</a></li>
                     <li class="header__nav-item"><a class="header__nav-link" href="">Liên hệ</a></li>
                 </ul>
@@ -55,6 +56,54 @@
                     <div class="search-box__text">
                         <h2 class="search-box__title">Địa điểm</h2>
                         <input type="text" placeholder="Bạn muốn đi đâu" class="search-box__input search-box__input--text">
+                        <div class="search-box__reccommend">
+                            <h1>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Địa điểm hot
+                            </h1>
+                            <div class="search-box__reccommend-box row">
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Đà Nẵng</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/tour-moi-nhat-2.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Nha Trang</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/tour-sapa-6.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Sa Pa</span>
+                                </a>
+                            </div>
+                            <div class="search-box__reccommend-box row">
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/tour-da-lat.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Đà Lạt</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/vịnh hạ long.png" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Hạ Long</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/ninh binh.png" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Ninh Bình</span>
+                                </a>
+                            </div>
+                            <div class="search-box__reccommend-box row">
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/cam ranh.png" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Nha Trang</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/ph" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Phú Quốc</span>
+                                </a>
+                                <a href="tour.html" class="search-box__location col col-xl-4">
+                                    <img src="./assets/img/search-da-nang.jpg" class="search-box__location-img"></img>
+                                    <span class="search-box__location-title">Cần Thơ</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="search-box__content">
@@ -62,6 +111,7 @@
                     <div class="search-box__text">
                         <h2 class="search-box__title">Ngày khởi hành</h2>
                         <input type="date" value="2023-1-12" class="search-box__input search-box__input--date">
+                        
                         <div class="search-box__border"></div>
                     </div>
                 </div>
@@ -79,7 +129,7 @@
                     </div>   
                 </div>
                 <div class="clear"></div>
-                <a href="http://127.0.0.1:5500/tour.html" class="search-box__btn">
+                <a href="tour.html" class="search-box__btn">
                     <i class="search-box__icon-search fa-solid fa-magnifying-glass"></i>
                 </a>
             </form>
@@ -95,7 +145,7 @@
             <div class="row service-list">
                 <div class="col col-xl-3 service-item">
                     <div class="service__logo">
-                        <img src="/assets/img/logo1.png" alt="">
+                        <img src="./assets/img/logo1.png" alt="">
                         <h3 class="service-title">Địa điểm thu hút, nổi tiếng</h3>
                         <p class="service-desc">Địa điểm cực hot mà bạn nhất định phải đến một lần</p>
                     </div>
@@ -103,7 +153,7 @@
 
                 <div class="col col-xl-3 service-item">
                     <div class="service__logo">
-                        <img style="height: 68px;" src="/assets/img/logo2.png" alt="">
+                        <img style="height: 68px;" src="./assets/img/logo2.png" alt="">
                         <h3 class="service-title">Thanh toán an toàn</h3>
                         <p class="service-desc">Giao dịch trực tuyến an toàn với nhiều lựa chọn</p>
                     </div>
@@ -111,7 +161,7 @@
 
                 <div class="col col-xl-3 service-item">
                     <div class="service__logo">
-                        <img src="/assets/img/logo3.png" alt="">
+                        <img src="./assets/img/logo3.png" alt="">
                         <h3 class="service-title">Giá rẻ mỗi ngày</h3>
                         <p class="service-desc">Giá bạn thấy là giá bạn trả! <br>
                         Nhiều lựa chọn giá rẻ để bạn thỏa sức so sánh
@@ -121,7 +171,7 @@
 
                 <div class="col col-xl-3 service-item">
                     <div class="service__logo">
-                        <img src="/assets/img/logo4.png" alt="">
+                        <img src="./assets/img/logo4.png" alt="">
                         <h3 class="service-title">Hỗ trợ khách hàng 24/7</h3>
                         <p class="service-desc">Sẵn sàng giúp đỡ bạn trong từng bước của quá trình đặt hàng</p>
                     </div>
@@ -136,7 +186,7 @@
             </h3>
             <h1 class="section-heading text-center">Các điểm đến <div class="primary-text">yêu thích</div> </h1>
             <div class="section-4__row ">
-                <a href="http://127.0.0.1:5500/tour.html" class="section-4__tour-item ">
+                <a href="tour.html" class="section-4__tour-item ">
                     <img src="./assets/img/vịnh hạ long.png" alt="" class="">
                     <div class="section-4__tour-content">
                         <h2 class="section-4__tour-title">Hạ Long</h2>
@@ -144,7 +194,7 @@
                     </div>
                 </a>
 
-                <a href="http://127.0.0.1:5500/tour.html" class="section-4__tour-item ">
+                <a href="tour.html" class="section-4__tour-item ">
                     <img src="./assets/img/Huế (1).png" alt="" class="">
                     <div class="section-4__tour-content">
                         <h2 class="section-4__tour-title">Huế</h2>
@@ -152,7 +202,7 @@
                     </div>
                 </a>
 
-                <a href="http://127.0.0.1:5500/tour.html" class="section-4__tour-item">
+                <a href="tour.html" class="section-4__tour-item">
                     <img src="./assets/img/tour-nghe-an.gif" alt="" class="">
                     <div class="section-4__tour-content">
                         <h2 class="section-4__tour-title">Nghệ An</h2>
@@ -160,7 +210,7 @@
                     </div>
                 </a>
 
-                <a href="http://127.0.0.1:5500/tour.html" class="section-4__tour-item ">
+                <a href="tour.html" class="section-4__tour-item ">
                     <img src="./assets/img/ninh binh.png" alt="" class="">
                     <div class="section-4__tour-content">
                         <h2 class="section-4__tour-title">Ninh Bình</h2>
@@ -168,6 +218,8 @@
                     </div>
                 </a>
             </div>
+            <a href="tour.html" style="margin-top: 32px;" class="more-btn"> Xem thêm </a>
+
         </section>
 
         <!-- Section 3: Video -->
@@ -184,7 +236,7 @@
             </h3>
             <h1 class="section-heading text-center">Tour du lịch <div class="primary-text">mới nhất</div> </h1>
             <div class="tour-list row">
-                <div class="tour-item col col-xl-4">
+                       <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/Tour-mien-trung.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">                      
@@ -193,7 +245,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                 </div>
-                                <span class="tour-desc__id">Mã tour: 010101</span>
+                                <span class="tour-desc__id">Mã tour:
+                                    <span> 0101011</span></span>
                         </div>
                         <div class="tour-content__title">
                             <a href="" class="tour-content__heading">
@@ -220,7 +273,8 @@
                     </div>
                 </div>
 
-                <div class="tour-item col col-xl-4">
+
+                <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/tour-da-nang-2.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">
@@ -229,7 +283,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                </div>
-                               <span class="tour-desc__id">Mã tour: 010101</span>
+                               <span class="tour-desc__id">Mã tour:
+                                <span> 0101011</span></span>
                             </div>
                             <div class="tour-content__title">
                                 <a href="" class="tour-content__heading">
@@ -256,7 +311,7 @@
                     </a>
                 </div>
 
-                <div class="tour-item col col-xl-4">
+                <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/tour-da-nang.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">
@@ -265,7 +320,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                </div>
-                               <span class="tour-desc__id">Mã tour: 010101</span>
+                               <span class="tour-desc__id">Mã tour:
+                                <span> 0101011</span></span>
                             </div>
                             <div class="tour-content__title">
                                 <a href="" class="tour-content__heading">
@@ -292,7 +348,7 @@
                     </a>
                 </div>
 
-                <div class="tour-item col col-xl-4">
+                <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/Tour-mien-trung.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">                      
@@ -301,7 +357,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                 </div>
-                                <span class="tour-desc__id">Mã tour: 010101</span>
+                                <span class="tour-desc__id">Mã tour:
+                                    <span> 0101011</span></span>
                         </div>
                         <div class="tour-content__title">
                             <a href="" class="tour-content__heading">
@@ -328,7 +385,7 @@
                     </div>
                 </div>
 
-                <div class="tour-item col col-xl-4">
+                <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/tour-da-nang-2.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">
@@ -337,7 +394,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                </div>
-                               <span class="tour-desc__id">Mã tour: 010101</span>
+                               <span class="tour-desc__id">Mã tour:
+                                <span> 0101011</span></span>
                             </div>
                             <div class="tour-content__title">
                                 <a href="" class="tour-content__heading">
@@ -364,7 +422,7 @@
                     </a>
                 </div>
 
-                <div class="tour-item col col-xl-4">
+                <div class="tour-item col col-md-4 col-xl-4">
                     <a href="" class="tour-item__box">
                         <img src="./assets/img/tour-da-nang.jpg" alt="" class="tour-item__img">
                         <div class="tour-content">
@@ -373,7 +431,8 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>Đà Nẵng</span>
                                </div>
-                               <span class="tour-desc__id">Mã tour: 010101</span>
+                               <span class="tour-desc__id">Mã tour:
+                                <span> 0101011</span></span>
                             </div>
                             <div class="tour-content__title">
                                 <a href="" class="tour-content__heading">
@@ -400,7 +459,7 @@
                     </a>
                 </div>
             </div>
-            <button class="more-btn"> Xem thêm </button>
+            <a href="tour.html" class="more-btn"> Xem thêm </a>
         </section>
 
 
@@ -465,7 +524,7 @@
                     </div>
                 </a>
             </div>
-            <button class="more-btn"> Xem thêm </button>
+            <a href="tour.html" class="more-btn"> Xem thêm </a>
 
             
         </section>
@@ -558,7 +617,8 @@
         headerAcc.classList.toggle('active');
     })
     
-     /*Search-box*/
+
+    /*Search-box*/
     const searchInput = document.querySelector('.search-box__input--text');
     const searchRec = document.querySelector('.search-box__reccommend');
     searchInput.onclick = () =>{
@@ -572,6 +632,7 @@
     searchInput.addEventListener('input', function() {
         searchRec.style.display = 'none'; 
     });
+
 
     /* Prevent default */
     const link = document.querySelectorAll('a[href*="#"]');
