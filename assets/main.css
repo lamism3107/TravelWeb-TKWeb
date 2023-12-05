@@ -320,7 +320,7 @@ body{
     opacity: 0.7;
 }
 .search-box__btn i{
-    content: "\f002";
+    /* content: "\f002"; */
     font-size: 2.4rem;
     color: #fff;
     line-height: 50px;
@@ -545,9 +545,12 @@ body{
 }
 .section-6-item{
     text-decoration: none;
-    padding: 16px;
+    padding: 14px;
     transform: scale(1);
     transition: all 0.5s ease 0s;
+}
+.section-6-item:hover .section-6__content{
+    box-shadow: 0 5px 10px rgba(9, 112, 185, 0.3);
 }
 .section-6-item:hover{
     transform: scale(1.05);
